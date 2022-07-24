@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div>
+        <h1>Devchallenges.io</h1>
+        <div id="lista">
+            <ul>
+                <nav>
+                    <li v-for="menu of menus">{{menu.nombre}}
+                        <a href="javascript:abrir()" v-if="menu.nombre === ' '">Inputs</a>
+                    </li>
+                </nav>
+            </ul>
+        </div>
+    </div>
+    <div id="ventana">
+        se habrio ventana
+    </div>
+    <div>
+        <button>Default</button>
+        <a href="javascript:cerrar()">cerrar</a>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
     <script src="code.js"></script>
 </body>
