@@ -9,12 +9,12 @@
 </head>
 <body>
     <div>
-        <h1>Devchallenges.io</h1>
+        <h1><a href="javascript:cerrar()" class="B vinculos1"><strong>Dev</strong>challenges.io</a></h1>
         <div id="lista">
             <ul>
                 <nav>
-                    <li v-for="menu of menus">{{menu.nombre}}
-                        <a href="javascript:abrir()" v-if="menu.nombre === ' '">Inputs</a>
+                    <li v-for="menu of menus" class="lista1">{{menu.nombre}}
+                        <a class="B vinculos2" href="javascript:abrir()" v-if="menu.nombre === ' '">Inputs</a>
                     </li>
                 </nav>
             </ul>
@@ -30,7 +30,6 @@
         </ul>
     </div>
     <div>
-        <a href="javascript:cerrar()">cerrar</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
     <script src="code.js"></script>
